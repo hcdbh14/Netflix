@@ -27,7 +27,7 @@ static NSString *movieURL = @"https://x-mode.co.il/exam/allMovies/allMovies.txt"
 }
 
 -(void)sendRequest {
-    NetworkManager * networkManager = [[NetworkManager alloc] init];
+    NetworkManager * networkManager = NetworkManager.new;
     [networkManager request:@"GET" andURL:movieURL completion:^(NSData *data, NSError *error) {
         if (error) {
             NSLog(@"Error %@", error );
