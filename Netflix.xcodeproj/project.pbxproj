@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EDCB6DD3246D879A00CCFCEE /* CinemaCityObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaCityObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCB6DD3246D879A00CCFCEE /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCB6DD6246D879A00CCFCEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDCB6DD7246D879A00CCFCEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDCB6DD9246D879A00CCFCEE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		EDCB6DCA246D879A00CCFCEE = {
 			isa = PBXGroup;
 			children = (
-				EDCB6DD5246D879A00CCFCEE /* CinemaCityObjC */,
+				EDCB6DD5246D879A00CCFCEE /* Netflix */,
 				EDCB6DD4246D879A00CCFCEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		EDCB6DD4246D879A00CCFCEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDCB6DD3246D879A00CCFCEE /* CinemaCityObjC.app */,
+				EDCB6DD3246D879A00CCFCEE /* Netflix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDCB6DD5246D879A00CCFCEE /* CinemaCityObjC */ = {
+		EDCB6DD5246D879A00CCFCEE /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
 				EDCB6DEF246D87C000CCFCEE /* Models */,
@@ -82,7 +82,7 @@
 				EDCB6DE7246D879B00CCFCEE /* Info.plist */,
 				EDCB6DE8246D879B00CCFCEE /* main.m */,
 			);
-			path = CinemaCityObjC;
+			path = Netflix;
 			sourceTree = "<group>";
 		};
 		EDCB6DEF246D87C000CCFCEE /* Models */ = {
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDCB6DD2246D879A00CCFCEE /* CinemaCityObjC */ = {
+		EDCB6DD2246D879A00CCFCEE /* Netflix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDCB6DEC246D879B00CCFCEE /* Build configuration list for PBXNativeTarget "CinemaCityObjC" */;
+			buildConfigurationList = EDCB6DEC246D879B00CCFCEE /* Build configuration list for PBXNativeTarget "Netflix" */;
 			buildPhases = (
 				EDCB6DCF246D879A00CCFCEE /* Sources */,
 				EDCB6DD0246D879A00CCFCEE /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = CinemaCityObjC;
+			name = Netflix;
 			productName = CinemaCityObjC;
-			productReference = EDCB6DD3246D879A00CCFCEE /* CinemaCityObjC.app */;
+			productReference = EDCB6DD3246D879A00CCFCEE /* Netflix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EDCB6DCE246D879A00CCFCEE /* Build configuration list for PBXProject "CinemaCityObjC" */;
+			buildConfigurationList = EDCB6DCE246D879A00CCFCEE /* Build configuration list for PBXProject "Netflix" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDCB6DD2246D879A00CCFCEE /* CinemaCityObjC */,
+				EDCB6DD2246D879A00CCFCEE /* Netflix */,
 			);
 		};
 /* End PBXProject section */
@@ -332,12 +332,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CinemaCityObjC/Info.plist;
+				INFOPLIST_FILE = Netflix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kenny.CinemaCityObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = kenny.Netflix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,12 +348,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CinemaCityObjC/Info.plist;
+				INFOPLIST_FILE = Netflix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kenny.CinemaCityObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = kenny.Netflix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDCB6DCE246D879A00CCFCEE /* Build configuration list for PBXProject "CinemaCityObjC" */ = {
+		EDCB6DCE246D879A00CCFCEE /* Build configuration list for PBXProject "Netflix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDCB6DEA246D879B00CCFCEE /* Debug */,
@@ -371,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDCB6DEC246D879B00CCFCEE /* Build configuration list for PBXNativeTarget "CinemaCityObjC" */ = {
+		EDCB6DEC246D879B00CCFCEE /* Build configuration list for PBXNativeTarget "Netflix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDCB6DED246D879B00CCFCEE /* Debug */,
