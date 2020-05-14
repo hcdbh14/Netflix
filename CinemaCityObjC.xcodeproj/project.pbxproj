@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		EDCB6DD8246D879A00CCFCEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DD7246D879A00CCFCEE /* AppDelegate.m */; };
 		EDCB6DDB246D879A00CCFCEE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DDA246D879A00CCFCEE /* SceneDelegate.m */; };
-		EDCB6DDE246D879A00CCFCEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DDD246D879A00CCFCEE /* ViewController.m */; };
+		EDCB6DDE246D879A00CCFCEE /* MovieListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DDD246D879A00CCFCEE /* MovieListVC.m */; };
 		EDCB6DE1246D879A00CCFCEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCB6DDF246D879A00CCFCEE /* Main.storyboard */; };
 		EDCB6DE3246D879B00CCFCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCB6DE2246D879B00CCFCEE /* Assets.xcassets */; };
 		EDCB6DE6246D879B00CCFCEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCB6DE4246D879B00CCFCEE /* LaunchScreen.storyboard */; };
 		EDCB6DE9246D879B00CCFCEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DE8246D879B00CCFCEE /* main.m */; };
+		EDCB6DF2246D87E000CCFCEE /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DF1246D87E000CCFCEE /* NetworkManager.m */; };
+		EDCB6DF6246D886400CCFCEE /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DF5246D886400CCFCEE /* MovieCell.m */; };
+		EDCB6DF9246D8AE800CCFCEE /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCB6DF8246D8AE800CCFCEE /* Movie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		EDCB6DD7246D879A00CCFCEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDCB6DD9246D879A00CCFCEE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		EDCB6DDA246D879A00CCFCEE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EDCB6DDC246D879A00CCFCEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDCB6DDD246D879A00CCFCEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDCB6DDC246D879A00CCFCEE /* MovieListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieListVC.h; sourceTree = "<group>"; };
+		EDCB6DDD246D879A00CCFCEE /* MovieListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieListVC.m; sourceTree = "<group>"; };
 		EDCB6DE0246D879A00CCFCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDCB6DE2246D879B00CCFCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDCB6DE5246D879B00CCFCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDCB6DE7246D879B00CCFCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDCB6DE8246D879B00CCFCEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDCB6DF0246D87E000CCFCEE /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		EDCB6DF1246D87E000CCFCEE /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		EDCB6DF4246D886400CCFCEE /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		EDCB6DF5246D886400CCFCEE /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		EDCB6DF7246D8AE800CCFCEE /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		EDCB6DF8246D8AE800CCFCEE /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +70,49 @@
 		EDCB6DD5246D879A00CCFCEE /* CinemaCityObjC */ = {
 			isa = PBXGroup;
 			children = (
-				EDCB6DD6246D879A00CCFCEE /* AppDelegate.h */,
+				EDCB6DEF246D87C000CCFCEE /* Models */,
+				EDCB6DF3246D881000CCFCEE /* Controllers */,
+				EDD67C25246DBDB30044689E /* View */,
 				EDCB6DD7246D879A00CCFCEE /* AppDelegate.m */,
+				EDCB6DD6246D879A00CCFCEE /* AppDelegate.h */,
 				EDCB6DD9246D879A00CCFCEE /* SceneDelegate.h */,
 				EDCB6DDA246D879A00CCFCEE /* SceneDelegate.m */,
-				EDCB6DDC246D879A00CCFCEE /* ViewController.h */,
-				EDCB6DDD246D879A00CCFCEE /* ViewController.m */,
-				EDCB6DDF246D879A00CCFCEE /* Main.storyboard */,
 				EDCB6DE2246D879B00CCFCEE /* Assets.xcassets */,
 				EDCB6DE4246D879B00CCFCEE /* LaunchScreen.storyboard */,
 				EDCB6DE7246D879B00CCFCEE /* Info.plist */,
 				EDCB6DE8246D879B00CCFCEE /* main.m */,
 			);
 			path = CinemaCityObjC;
+			sourceTree = "<group>";
+		};
+		EDCB6DEF246D87C000CCFCEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDCB6DF0246D87E000CCFCEE /* NetworkManager.h */,
+				EDCB6DF1246D87E000CCFCEE /* NetworkManager.m */,
+				EDCB6DF7246D8AE800CCFCEE /* Movie.h */,
+				EDCB6DF8246D8AE800CCFCEE /* Movie.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDCB6DF3246D881000CCFCEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDCB6DF4246D886400CCFCEE /* MovieCell.h */,
+				EDCB6DF5246D886400CCFCEE /* MovieCell.m */,
+				EDCB6DDD246D879A00CCFCEE /* MovieListVC.m */,
+				EDCB6DDC246D879A00CCFCEE /* MovieListVC.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDD67C25246DBDB30044689E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDCB6DDF246D879A00CCFCEE /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCB6DDE246D879A00CCFCEE /* ViewController.m in Sources */,
+				EDCB6DDE246D879A00CCFCEE /* MovieListVC.m in Sources */,
 				EDCB6DD8246D879A00CCFCEE /* AppDelegate.m in Sources */,
+				EDCB6DF9246D8AE800CCFCEE /* Movie.m in Sources */,
+				EDCB6DF6246D886400CCFCEE /* MovieCell.m in Sources */,
 				EDCB6DE9246D879B00CCFCEE /* main.m in Sources */,
+				EDCB6DF2246D87E000CCFCEE /* NetworkManager.m in Sources */,
 				EDCB6DDB246D879A00CCFCEE /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
