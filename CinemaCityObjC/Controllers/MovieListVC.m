@@ -3,9 +3,7 @@
 #import "Movie.h"
 #import "MovieCell.h"
 
-@interface MovieListVC ()<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate> {
-    
-}
+@interface MovieListVC ()<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate> 
 @property (strong, nonatomic) NSMutableArray<Movie *> *searchBarData;
 @property (strong, nonatomic) NSMutableArray<Movie *> *movieList;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -24,6 +22,7 @@ static NSString *movieURL = @"https://x-mode.co.il/exam/allMovies/allMovies.txt"
     self.table.dataSource = self;
     self.table.tableFooterView = [UIView new];
     self.searchBar.delegate = self;
+    [self addTouchGesture];
     [self sendRequest];
 }
 
@@ -63,7 +62,20 @@ static NSString *movieURL = @"https://x-mode.co.il/exam/allMovies/allMovies.txt"
     }];;
 }
 
-#pragma mark - UITableView DataSource Methods
+
+#pragma mark Keyboard Methods
+-(void)dismissKeyboard {
+    [self.searchBar resignFirstResponder];
+}
+
+-(void)addTouchGesture {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+}
+
+
+#pragma mark TableView Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _movieList.count;
 }
@@ -80,6 +92,7 @@ static NSString *movieURL = @"https://x-mode.co.il/exam/allMovies/allMovies.txt"
 }
 
 
+#pragma mark SearchBar Methods
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     
     NSMutableArray *removedMovies = [NSMutableArray array];
@@ -104,4 +117,5 @@ static NSString *movieURL = @"https://x-mode.co.il/exam/allMovies/allMovies.txt"
         [self.table reloadData];
     });
 }
+
 @end
